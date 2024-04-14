@@ -44,9 +44,11 @@ class _AnimationFlipState extends State<AnimationFlip>
       body: Center(
         child: GestureDetector(
           onTap: _onFlip,
+          // 참고 : https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html
           child: AnimatedBuilder(
             animation: _controller,
             builder: (context, child) {
+              // Transform : 2D 그래픽 변환에 사용되는 위젯(크기 조절, 이동, 회전, 기울이기)
               return Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.identity()
