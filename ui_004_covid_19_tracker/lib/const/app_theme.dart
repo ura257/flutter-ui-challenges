@@ -16,8 +16,20 @@ class AppTheme {
         bodyLarge: AppTextStyles.cardTitle,
         bodyMedium: AppTextStyles.cardBody,
       ),
+      // AppBar
+      appBarTheme: AppBarStyles.theme,
     );
   }
+}//AppTheme
+
+class AppBarStyles{
+  static const AppBarTheme theme = AppBarTheme(
+    backgroundColor: AppColor.background,
+    foregroundColor: AppColor.white,
+    elevation: 0.0,
+    titleTextStyle: AppTextStyles.title,
+  );
+
 }
 
 class AppTextStyles {
@@ -36,4 +48,4 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColor.white,
   );
-}
+}//AppTextStyles
